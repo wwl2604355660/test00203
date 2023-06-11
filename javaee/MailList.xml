@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 通讯录 [
+                    <!ELEMENT 通讯录 (姓名*)>
+                    <!ELEMENT 姓名 (#PCDATA)>
+                    <!ATTLIST 姓名 电话 CDATA #REQUIRED
+                                  email CDATA #REQUIRED
+                                  住址 CDATA #IMPLIED>
+                ]>
+
+<通讯录>
+  <姓名 电话="110" email="110@qq.com" 住址="哈尔滨理工大学">张三</姓名>
+  <姓名 电话="111" email="111@qq.com" 住址="哈尔滨工程大学">李四</姓名>
+  <姓名 电话="112" email="112@qq.com" 住址="哈尔滨工业大学">王五</姓名>
+  <姓名 电话="113" email="113@qq.com">老六</姓名>
+  <姓名 电话="114" email="114@qq.com">老七</姓名>
+</通讯录>
+
+
