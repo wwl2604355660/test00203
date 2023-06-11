@@ -54,6 +54,6 @@ public class LController {
         httpSession.setAttribute("d2",divy);
         System.out.println("AAAAAAAAAAAAAAAAA");
 
-        return "/input.jsp";
+        return "a";
     }
 }

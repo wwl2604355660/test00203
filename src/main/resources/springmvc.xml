@@ -16,7 +16,7 @@
     <!--    开启注解-->
     <mvc:annotation-driven></mvc:annotation-driven>
 
-<!--    <mvc:view-controller path="/" view-name="/input.jsp"></mvc:view-controller>-->
+    <mvc:view-controller path="/" view-name="/input"></mvc:view-controller>
 <!--    <mvc:view-controller path="/out" view-name="out"></mvc:view-controller>-->
 
 </beans>
