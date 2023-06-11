@@ -13,18 +13,9 @@ public class LController {
     public String add(HttpSession httpSession, @RequestParam("input1") String aa,
                       @RequestParam("input2") String bb) {
 
-
-//        String input1 = (String) httpSession.getAttribute("input1");
-//        String input2 = (String) httpSession.getAttribute("input2");
-
-
-        String input1 = aa;
-        String input2 = bb;
-
-
-        System.out.println(input1.toString());
-        String[] s1 = input1.split(" ");
-        String[] s2 = input2.split(" ");
+        System.out.println(aa.toString());
+        String[] s1 = aa.split(" ");
+        String[] s2 = bb.split(" ");
 
         int[] intArray1 = new int[s1.length];
         for (int i = 0; i < s1.length; i++) {
@@ -40,9 +31,9 @@ public class LController {
         int suby = intArray1[1] - intArray2[1];
         int mulx = intArray1[0] * intArray2[0] - intArray1[1] * intArray2[1];
         int muly = intArray1[0] * intArray2[1] + intArray2[0] * intArray1[1];
-        int denominator = (int) (Math.pow(intArray2[1], 2) + Math.pow(intArray2[1], 2));
-        int divx = (intArray1[0] * intArray2[0] + intArray1[1] * intArray2[1]) / denominator;
-        int divy = (intArray1[1] * intArray2[0] - intArray1[0] * intArray2[1]) / denominator;
+        double denominator = (int) (Math.pow(intArray2[1], 2) + Math.pow(intArray2[1], 2));
+        double divx = (intArray1[0] * intArray2[0] + intArray1[1] * intArray2[1]) / denominator;
+        double divy = (intArray1[1] * intArray2[0] - intArray1[0] * intArray2[1]) / denominator;
 
         httpSession.setAttribute("a1",addx);
         httpSession.setAttribute("a2",addy);
@@ -52,8 +43,6 @@ public class LController {
         httpSession.setAttribute("c2",muly);
         httpSession.setAttribute("d1",divx);
         httpSession.setAttribute("d2",divy);
-        System.out.println("AAAAAAAAAAAAAAAAA");
-
-        return "a";
+        return "input";
     }
 }
