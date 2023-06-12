@@ -17,6 +17,6 @@
     <mvc:annotation-driven></mvc:annotation-driven>
 
     <mvc:view-controller path="/" view-name="/input"></mvc:view-controller>
-<!--    <mvc:view-controller path="/out" view-name="out"></mvc:view-controller>-->
+<!--    <mvc:view-controller path="/output" view-name="output"></mvc:view-controller>-->
 
 </beans>
