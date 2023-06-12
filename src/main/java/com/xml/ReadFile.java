@@ -1,9 +1,6 @@
 package com.xml;
 
-/**
- * @author wwl
- * @create 2023-06-12 10:54
- */
+
 import org.xml.sax.*;
 import org.xml.sax.helpers.DefaultHandler;
 import javax.xml.parsers.*;
