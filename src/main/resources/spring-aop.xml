@@ -5,18 +5,14 @@
        xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="com.spring.Aop"></context:component-scan>
+    <context:component-scan base-package="com.spring.shijian3.Aop"></context:component-scan>
 
     <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 
-    <bean id="huoche1" class="com.spring.Aop.Huoche">
-        <property name="checi" value="G1234"></property>
-        <property name="beginAddress" value="北京"></property>
-    </bean>
 
-    <bean id="huoche2" class="com.spring.Aop.Huoche">
-        <constructor-arg name="beginAddress" value="广州"></constructor-arg>
-        <constructor-arg name="checi" value="D321"></constructor-arg>
+    <bean id="aaa" class="com.spring.shijian3.Aop.Calculatorimpl">
+        <property name="x" value="20"></property>
+        <property name="y" value="10"></property>
     </bean>
 
 </beans>
