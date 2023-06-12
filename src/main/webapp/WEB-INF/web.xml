@@ -4,6 +4,8 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+<!--  这个是SpringMVC的配置，基本不用改，要改就改这个 <param-value>classpath:springmvc.xml</param-value>
+      的配置文件-->
   <servlet>
     <servlet-name>SpringMVC</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -18,6 +20,7 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+<!--  这个是servlet的URI配置，相当于注解的@WebServlet-->
   <!--    <servlet>-->
   <!--        <servlet-name>TriangleServlet</servlet-name>-->
   <!--        <servlet-class></servlet-class>-->
