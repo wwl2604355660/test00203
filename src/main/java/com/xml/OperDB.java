@@ -2,10 +2,6 @@ package com.xml;
 
 import java.sql.*;
 
-/**
- * @author wwl
- * @create 2023-06-12 10:59
- */
 public class OperDB {
 
     // 数据库连接信息

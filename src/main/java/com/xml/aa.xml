@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE databases SYSTEM "database.dtd">
+<!--<!DOCTYPE databases SYSTEM "database.dtd">-->
 <databases>
     <db>
         <url>jdbc:mysql://localhost:3306/mydb</url>

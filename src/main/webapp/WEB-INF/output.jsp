@@ -9,7 +9,6 @@
 </head>
 <body>
 <h2>符合条件的数：</h2>
-<%-- 使用 JSP 标签库将结果列表以直角三角形的形式输出 --%>
 <c:forEach items="${filteredNumbers}" var="num" varStatus="status">
     <c:out value="${num} "/>
     <c:if test="${status.index % 10 == 9}">

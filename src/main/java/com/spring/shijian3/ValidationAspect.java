@@ -31,8 +31,8 @@ public class ValidationAspect {
             System.out.println("相关的参数值: " + Arrays.toString(joinPoint.getArgs()));
             for (Object s : args){
                 int a = (int) s;
-                if (a < 0){
-                    System.out.println("参数中带有负数,不合规!");
+                if (a == 0){
+                    System.out.println("当前除数为0,请修改后重新计算");
                     return 0;
                 }
             }

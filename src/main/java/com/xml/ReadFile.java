@@ -1,6 +1,4 @@
 package com.xml;
-
-
 import org.xml.sax.*;
 import org.xml.sax.helpers.DefaultHandler;
 import javax.xml.parsers.*;
@@ -34,22 +32,16 @@ public class ReadFile extends DefaultHandler {
     @Override
     public void characters(char ch[], int start, int length) throws SAXException {
         if (tag.equals("url") || tag.equals("user") || tag.equals("password")) {
-            // 解析到指定标签时，获取其文本内容
             content = new String(ch, start, length).trim();
-            // 输出文本内容
             System.out.println("<" + tag + ">" + content);
         }
     }
 
     public static void main(String argv[]) {
         try {
-            // 创建解析器工厂
             SAXParserFactory factory = SAXParserFactory.newInstance();
-            // 创建解析器对象
             SAXParser parser = factory.newSAXParser();
-            // 创建解析类实例
             ReadFile reader = new ReadFile();
-            // 开始解析 XML 文档
             parser.parse(new File("aa.xml"), reader);
         } catch (Exception e) {
             e.printStackTrace();
