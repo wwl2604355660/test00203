@@ -1,4 +1,4 @@
-package com.spring.shijian3.Aop;
+package com.spring.shijian3;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

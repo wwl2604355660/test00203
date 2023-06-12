@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Component
+//@Component
 public class Calculatorimpl implements opration{
 
     private float x;
